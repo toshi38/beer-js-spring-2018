@@ -1,0 +1,18 @@
+#SHOW_IN_SLIDE_START_1
+version: '2'
+services:
+    deployment:
+        build: ./
+        image: game-deployment
+        ports:
+            - "8080:8080"
+
+    debug:
+        build:
+            context: ./
+            dockerfile: Dockerfile.debug
+        image: game-debug
+        ports:
+            - "8080:8080"
+            - "9229:9229"
+#SHOW_IN_SLIDE_END_1

@@ -1,0 +1,15 @@
+#Show new added log
+
+#build docker image:
+docker build . -t game:s1
+
+#run image:
+docker run -d -p8080:8080
+
+#get logs
+docker ps
+docker logs
+
+#stop image
+docker ps
+docker kill

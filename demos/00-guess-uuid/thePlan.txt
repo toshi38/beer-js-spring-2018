@@ -1,0 +1,11 @@
+# Show code/debug from webstorm
+
+#build docker images:
+docker build . -t game:s0
+
+#run docker image: (detached)
+docker run -d -p 8080:8080 game:s0
+
+#stop docker image
+docker ps
+docker kill

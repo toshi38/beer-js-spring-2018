@@ -1,0 +1,16 @@
+# Show switching node to debug mode
+node --inspect server-build.js
+
+# From another window
+ps -C node
+
+kill -s USR1
+
+#Go back Show now in inspection mode.
+
+#Run original docker container
+docker run -p game:s0
+
+#run script
+docker ps
+./debug

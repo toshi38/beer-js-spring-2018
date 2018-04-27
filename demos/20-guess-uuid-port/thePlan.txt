@@ -1,0 +1,14 @@
+#Demo debugging remote process
+
+#Show docker file with open port
+
+
+#Show docker compose file
+
+#Build debug
+docker compose build debug
+
+#Run debug
+docker compose up -d debug
+
+#Connect through port and use debugger
